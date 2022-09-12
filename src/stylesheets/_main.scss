@@ -1,0 +1,110 @@
+.main-background {
+    position: relative;
+    background: #242d35;
+    height: 100vh;
+}
+
+.main-container {
+    overflow: hidden;
+    position: absolute;
+    background: black;
+    width: 600px;
+    height: min(90%, 650px);
+    border-radius: 10px;
+
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.login-prompt {
+    width: 50%;
+    margin: 0 auto;
+    padding: 2.15em 0;
+}
+
+.login-prompt > h2 {
+    opacity: .9;
+    margin-bottom: .45em;
+    font-size: 2.1rem;
+    text-align: left;
+}
+
+.login-button, .login-textbox {
+    margin: calc(1.85em / 2) 0;
+}
+
+.login-button {
+    width: 100%;
+    background: white;
+    color: black;
+    padding: .8em 0;
+    border-radius: 1000px;
+    font-size: .95rem;
+    font-weight: 600;
+    border: 1px solid white;
+
+    transition: opacity 200ms ease-out;
+    cursor: pointer;
+}
+
+#forgot-password {
+    background: transparent;
+    color: white;
+    border: 1px solid #242d35;
+    transition: color 200ms ease-out, background 200ms ease-out;
+}
+
+.login-button:hover {
+    opacity: .75;
+}
+
+#forgot-password:hover {
+    opacity: 1;
+    background: rgb(36 45 53 / .6);
+}
+
+.sign-up-prompt {
+    font-size: .9rem;
+    margin-top: 2.5em;
+    display: flex;
+}
+
+.sign-up-prompt > p {
+    color: gray;
+}
+
+.sign-up-prompt > a {
+    color: #1d9bef;
+    text-decoration: none;
+    padding-left: .4ch;
+    font-weight: 600;
+}
+
+.login-or {
+    text-align: center;
+}
+
+.login-textbox {
+    position: relative;
+    width: calc(100% - 1em);
+    font-size: 1.05rem;
+    font-weight: 500;
+    border: 1.4px solid #242d35;
+    padding: 1.1em .5em;
+    border-radius: 5px;
+}
+
+.bumper {
+    width: 100%;
+    background: black;
+
+    > img {
+        display: block;
+        margin: 0 auto;
+        opacity: .75;
+        padding-top: 1.5em;
+        width: 35px;
+        aspect-ratio: 1;
+    }
+}
